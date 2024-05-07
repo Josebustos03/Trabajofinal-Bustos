@@ -1,0 +1,112 @@
+body p {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: rgb(216, 34, 34);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+  background-color: black;
+}
+body p {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: rgb(216, 34, 34);
+}
+
+header {
+  background-color: black;
+  text-align: center;
+  margin: 0px 0px;
+  padding: 0px 0px;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+main div img {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  padding: 20px;
+  margin: 20px;
+}
+main .grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: repeat(4, 25%);
+}
+main img {
+  width: 50%;
+  display: flex;
+  margin: 0px 330px;
+}
+main h1 {
+  color: rgb(216, 34, 34);
+  font-size: 50px;
+  text-decoration: solid;
+  text-align: center;
+  justify-content: center;
+}
+main div a {
+  margin: 30px 90px;
+  font-size: 30px;
+  text-decoration: solid;
+}
+
+section {
+  display: flex;
+  margin-top: 30px;
+  gap: 100px;
+  padding: 10px;
+}
+section .billie {
+  width: 250px;
+  height: 250px;
+  margin-left: 200px;
+}
+section .mike {
+  width: 250px;
+  height: 250px;
+}
+section .tre {
+  width: 250px;
+  height: 250px;
+}
+section h2 {
+  text-align: center;
+  color: rgb(216, 34, 34);
+}
+
+footer div h2 {
+  text-align: center;
+  color: rgb(216, 34, 34);
+  font-size: 15px;
+  margin: 200px;
+}
+
+@media screen and (min-widht: 600px) {
+  main {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column: repeat(2, 50%);
+  }
+}
+@media screen and (min-widht: 1024px) {
+  main {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column: repeat(2, 100%);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

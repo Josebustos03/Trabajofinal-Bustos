@@ -1,0 +1,13 @@
+
+@media screen and (min-widht: 600px){
+    main{
+     grid-template-columns: repeat(2, 1fr);
+     grid-column: repeat(2, 50%)
+    }
+  }
+ @media screen and (min-widht: 1024px){
+   main{
+     grid-template-columns: repeat(2, 1fr);
+     grid-column: repeat(2, 100%)
+   }
+ }

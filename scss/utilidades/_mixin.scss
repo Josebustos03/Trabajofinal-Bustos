@@ -1,0 +1,15 @@
+
+@mixin flex{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: rgb(216, 34, 34);
+}
+
+body p{
+    @include flex;
+}
+
+
+
+   
