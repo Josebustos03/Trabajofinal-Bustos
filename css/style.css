@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body p {
   display: flex;
   text-align: center;
@@ -19,8 +20,9 @@ body {
 body p {
   display: flex;
   text-align: center;
-  justify-content: center;
-  color: rgb(216, 34, 34);
+  justify-content: left;
+  color: rgb(91, 255, 82);
+  margin: 0px 10px;
 }
 
 header {
@@ -28,13 +30,42 @@ header {
   text-align: center;
   margin: 0px 0px;
   padding: 0px 0px;
+  /* navbar de la pagina*/
 }
 header nav ul {
   list-style: none;
   display: flex;
   gap: 20px;
 }
+header .navbar-brand {
+  color: rgb(91, 255, 82);
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 0 0 22px rgb(143, 253, 143);
+}
+header .navbar-brand:hover {
+  color: rgb(182, 244, 179);
+}
+header .nav-link {
+  color: rgb(91, 255, 82);
+  text-shadow: 0 0 22px rgb(143, 253, 143);
+}
+header .nav-link:hover {
+  color: rgb(182, 244, 179);
+}
+header .nav-link .dropdown-menu {
+  color: rgb(91, 255, 82);
+}
+header .nav-link .dropdown-item {
+  color: rgb(91, 255, 82);
+}
 
+main {
+  /*contenedor de la galeria de imagenes*/
+  /*imagen del index y de contacto*/
+  /*links de redes sociales*/
+}
 main div img {
   width: 90%;
   height: 100%;
@@ -50,10 +81,10 @@ main .grid-container {
 main img {
   width: 50%;
   display: flex;
-  margin: 0px 330px;
+  margin: 0 auto;
 }
 main h1 {
-  color: rgb(216, 34, 34);
+  color: rgb(91, 255, 82);
   font-size: 50px;
   text-decoration: solid;
   text-align: center;
@@ -63,8 +94,10 @@ main div a {
   margin: 30px 90px;
   font-size: 30px;
   text-decoration: solid;
+  color: white;
 }
 
+/*section de las imagenes que componen la pestaña integrantes*/
 section {
   display: flex;
   margin-top: 30px;
@@ -86,16 +119,17 @@ section .tre {
 }
 section h2 {
   text-align: center;
-  color: rgb(216, 34, 34);
+  color: rgb(91, 255, 82);
 }
 
 footer div h2 {
   text-align: center;
-  color: rgb(216, 34, 34);
+  color: rgb(91, 255, 82);
   font-size: 15px;
   margin: 200px;
 }
 
+/*mediaqueries*/
 @media screen and (min-widht: 600px) {
   main {
     grid-template-columns: repeat(2, 1fr);

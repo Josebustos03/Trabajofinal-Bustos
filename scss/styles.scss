@@ -14,11 +14,12 @@ body{
     p{
         display: flex;
         text-align: center;
-        justify-content: center;
-        color: rgb(216, 34, 34);
+        justify-content: left;
+        color:  rgb(91, 255, 82);
+        margin: 0px 10px;
     }
 }
-header{
+header{ 
     background-color: $color-principal ;
     text-align: center;
     margin: 0px 0px;
@@ -30,7 +31,33 @@ header{
         gap: 20px;
         }
     }
-}
+    /* navbar de la pagina*/
+    .navbar-brand {
+        color: rgb(91, 255, 82);
+        font-size: 2em;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-shadow: 0 0 22px rgb(143, 253, 143);
+        
+        &:hover {
+        color: rgb(182, 244, 179);
+        }
+        }
+        .nav-link {
+        color: rgb(91, 255, 82);
+        text-shadow: 0 0 22px rgb(143, 253, 143);
+        
+        &:hover {
+        color: rgb(182, 244, 179);
+        }
+        .dropdown-menu{
+            color: rgb(91, 255, 82);
+        }
+        .dropdown-item{
+            color:  rgb(91, 255, 82);
+        }
+        }
+}  
 main{  
     div{
         img{
@@ -41,15 +68,17 @@ main{
         margin: 20px;
        } 
     } 
+    /*contenedor de la galeria de imagenes*/
     .grid-container{
         display: grid;
         grid-template-columns: auto auto;
         grid-template-rows: repeat(4, 25%);
     }
+    /*imagen del index y de contacto*/
     img{
         width: 50%;
         display: flex;
-        margin: 0px 330px;
+        margin: 0 auto;
         }
     h1{
         color: $color-secundario;
@@ -58,14 +87,17 @@ main{
         text-align: center;
         justify-content: center;
     }
+    /*links de redes sociales*/
     div{
         a{
         margin: 30px 90px;
         font-size: 30px;
         text-decoration: solid;
+        color: white;
         }
     }
 } 
+/*section de las imagenes que componen la pestaña integrantes*/
 section{
     display: flex;
     margin-top: 30px;
@@ -99,6 +131,7 @@ footer{
         }
     }
 }
+/*mediaqueries*/
 @import "html/mediaqueries"; 
 
 
